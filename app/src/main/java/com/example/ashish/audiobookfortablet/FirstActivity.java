@@ -6,6 +6,7 @@ import android.view.View;
 import android.util.Log;
 import android.content.Intent;
 
+
 public class FirstActivity extends AppCompatActivity {
 
     @Override
@@ -29,7 +30,6 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
-
 
 
 }
