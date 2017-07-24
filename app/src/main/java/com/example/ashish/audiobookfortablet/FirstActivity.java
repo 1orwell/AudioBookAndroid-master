@@ -27,7 +27,7 @@ public class FirstActivity extends AppCompatActivity {
 
     /** Called when the user clicks the Begin button */
     public void startBook(View v2) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, SpinAnimation.class);
         startActivity(intent);
     }
 

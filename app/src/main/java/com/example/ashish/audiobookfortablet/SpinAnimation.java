@@ -18,18 +18,27 @@ import android.view.MotionEvent;
 
 public class SpinAnimation extends Activity {
 
+    AnimationDrawable tom_anim;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splashscreen);
+        setContentView(R.layout.activity_spin_anim);
 
         //Beginning the loading animation as we attempt to verify registration with SIP
-        ImageView ivLoader = (ImageView) findViewById(R.id.IVloadinganimation);
-        ivLoader.setBackgroundResource(R.anim.animationloader);
+        ImageView ivLoader = (ImageView) findViewById(R.id.imageView2);
+        ivLoader.setBackgroundResource(R.drawable.tom_animation);
 
+        tom_anim = (AnimationDrawable) ivLoader.getBackground();
 
-        AnimationDrawable frameAnimation = (AnimationDrawable) ivLoader.getBackground();
-        frameAnimation.start();
+    }
+
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            tom_anim.start();
+            return true;
+        }
+        return super.onTouchEvent(event);
     }
 
     public void nextPage(View v2) {
@@ -39,7 +48,7 @@ public class SpinAnimation extends Activity {
 
     /** Called when the user clicks the "<" button */
     public void prevPage(View v2) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, FirstActivity.class);
         startActivity(intent);
     }
 }
