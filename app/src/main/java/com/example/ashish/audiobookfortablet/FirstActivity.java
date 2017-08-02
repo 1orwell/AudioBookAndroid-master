@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.util.Log;
 import android.content.Intent;
+import android.view.animation.Animation;
 
 
 public class FirstActivity extends AppCompatActivity {
@@ -27,7 +28,7 @@ public class FirstActivity extends AppCompatActivity {
 
     /** Called when the user clicks the Begin button */
     public void startBook(View v2) {
-        Intent intent = new Intent(this, SpinAnimation.class);
+        Intent intent = new Intent(this, TomAnimation.class);
         startActivity(intent);
     }
 

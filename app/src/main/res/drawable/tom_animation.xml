@@ -2,8 +2,8 @@
 
     <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:oneshot="false">
-        <item android:drawable="@drawable/tomthumb" android:duration="100" />
-        <item android:drawable="@drawable/tomwaving" android:duration="100" />
+        <item android:drawable="@drawable/tomthumb" android:duration="200" />
+        <item android:drawable="@drawable/tomwaving" android:duration="200" />
     </animation-list>
 
     <!--android:id="@+id/tom_list"-->

@@ -1,12 +1,13 @@
 package com.example.ashish.audiobookfortablet;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * Created by leesie on 03/07/17.
+ * Created by JohnB on 02/03/2017.
  */
 
 public class SixthActivity extends AppCompatActivity {
@@ -17,7 +18,6 @@ public class SixthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sixth);
     }
 
-    /** Called when the user clicks the Begin button */
     public void nextPage(View v2) {
         Intent intent = new Intent(this, SeventhActivity.class);
         startActivity(intent);
@@ -25,7 +25,7 @@ public class SixthActivity extends AppCompatActivity {
 
     /** Called when the user clicks the "<" button */
     public void prevPage(View v2) {
-        Intent intent = new Intent(this, FifthActivity.class);
+        Intent intent = new Intent(this, JackAnimation.class);
         startActivity(intent);
     }
 }
